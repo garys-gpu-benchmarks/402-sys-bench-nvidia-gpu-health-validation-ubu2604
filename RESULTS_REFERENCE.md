@@ -3,7 +3,7 @@
 **Main goal:** Analyze GPU CUDA runtime environment health  
 **Tools:** Run nvidia-smi, nvidia-smi -q, nvidia-smi -L, and dmesg
 
-Reference results measured by the maintainer on the system shown in each section (generator TEMPLATE_00_139 · recorded 2026-11-13). Your own runs write `results/RESULTS_ACTUAL.md` in the same format.
+Reference results measured by the maintainer on the system shown in each section (generator TEMPLATE_00_140 · recorded 2026-11-13). Your own runs write `results/RESULTS_ACTUAL.md` in the same format.
 
 > Smoke runs use deliberately small sizes. They check that the workload installs and runs end to end; their numbers are not performance results. Baseline and extended are.
 
@@ -11,9 +11,9 @@ Reference results measured by the maintainer on the system shown in each section
 ## smoke
 
 - **System:** 1× NVIDIA H100 PCIe (81559 MiB) · Intel(R) Xeon(R) Platinum 8352Y CPU @ 2.20GHz · Ubuntu 26.04.1 LTS · kernel 6.8.0-138-generic · driver 595.91.07
-- **Run:** 2026-11-13T13:44:27Z · status **N/A-EXPECTED** (exit 0)
-- **Time (mm:ss):** setup 00:48 · benchmark 00:06 · whole run 01:06
-- **Source:** run 402_20261113_134427
+- **Run:** 2026-11-13T20:08:15Z · status **N/A-EXPECTED** (exit 0)
+- **Time (mm:ss):** setup 00:52 · benchmark 00:06 · whole run 01:11
+- **Source:** run 402_20261113_200815
 - **Command:** `bash run_benchmark.sh --smoke --monitor-duration-sec 5 --expected-gpu-count 1 --min-pcie-link-width 16`
 
 | # | Metric | Result |
